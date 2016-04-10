@@ -49,26 +49,6 @@ typedef void (^failBlock)(NSURLSessionDataTask *task, NSError *error);
         errorBlock(task, error);
         NSLog(@"error %@", error);
     }];
-    
-//    NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithRequest:request fromFile:nil progress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-//        
-//    }];
-//    [uploadTask resume];
-    
-//    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:urlString parameters:nil error:&error];
-//
-//    [self.manager uploadTaskWithStreamedRequest:request progress:^(NSProgress * _Nonnull uploadProgress) {
-//        
-//    } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-//        if (responseObject) {
-//            NSLog(@"Succsess %@", responseObject);
-//            responseBlock(response, responseObject);
-//        } else if (error) {
-//            errorBlock(response, error);
-//            NSLog(@"error %@", error);
-//        }
-//    }];
-    
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D6423201CBAEBD600B3194A /* NFDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D64231F1CBAEBD600B3194A /* NFDetailController.m */; };
 		2D7386831CBA56ED00D99015 /* NFNewsFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7386821CBA56ED00D99015 /* NFNewsFeedCell.m */; };
 		2D7386871CBA5C5800D99015 /* NFNewsFeedDatasouce.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7386861CBA5C5800D99015 /* NFNewsFeedDatasouce.m */; };
 		2D73868D1CBA5D0200D99015 /* NFFeedElement+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D73868A1CBA5D0200D99015 /* NFFeedElement+CoreDataProperties.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D64231E1CBAEBD600B3194A /* NFDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFDetailController.h; path = GUI/ViewControllers/NFDetailController/NFDetailController.h; sourceTree = "<group>"; };
+		2D64231F1CBAEBD600B3194A /* NFDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NFDetailController.m; path = GUI/ViewControllers/NFDetailController/NFDetailController.m; sourceTree = "<group>"; };
 		2D7386811CBA56ED00D99015 /* NFNewsFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFNewsFeedCell.h; path = GUI/Cells/NFNewsFeedCell/NFNewsFeedCell.h; sourceTree = "<group>"; };
 		2D7386821CBA56ED00D99015 /* NFNewsFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NFNewsFeedCell.m; path = GUI/Cells/NFNewsFeedCell/NFNewsFeedCell.m; sourceTree = "<group>"; };
 		2D7386851CBA5C5800D99015 /* NFNewsFeedDatasouce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFNewsFeedDatasouce.h; path = GUI/NFNewsFeedDatasouce/NFNewsFeedDatasouce.h; sourceTree = "<group>"; };
@@ -75,6 +78,15 @@
 				ED2C2C0495BE8DBDBF01B6C3 /* libPods-NewsFeed.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D64231D1CBAEB9700B3194A /* NFDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				2D64231E1CBAEBD600B3194A /* NFDetailController.h */,
+				2D64231F1CBAEBD600B3194A /* NFDetailController.m */,
+			);
+			name = NFDetailController;
 			sourceTree = "<group>";
 		};
 		2D73867F1CBA569F00D99015 /* Cells */ = {
@@ -207,6 +219,7 @@
 		2DCCC1B61CBA4D6300FE810B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2D64231D1CBAEB9700B3194A /* NFDetailController */,
 				2DCCC1B71CBA522500FE810B /* NFNewsFeedController */,
 			);
 			name = ViewControllers;
@@ -381,6 +394,7 @@
 				2D8294CD1CBA6D0D006C92A1 /* NFRequestManager.m in Sources */,
 				2DCCC1BA1CBA526400FE810B /* NFNewsFeedController.m in Sources */,
 				2DCCC1BF1CBA531B00FE810B /* NFMapper.m in Sources */,
+				2D6423201CBAEBD600B3194A /* NFDetailController.m in Sources */,
 				2DCCC19D1CBA4D3000FE810B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,4 @@
 
 - (void)setupWithModel:(NFFeedElement *)model;
 
-- (CGFloat)heightForRowWith:(NFFeedElement *)model;
-
 @end

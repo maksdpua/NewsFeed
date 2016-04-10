@@ -28,16 +28,6 @@
     [self.thumbnail setImageWithURL:[NSURL URLWithString:model.imageMedium] placeholderImage:[UIImage placeholder]];
 }
 
-
-- (CGFloat)heightForRowWith:(NFFeedElement *)model {
-
-    self.title.frame = CGRectMake(0, 0, self.title.frame.size.width, CGFLOAT_MAX);
-    self.title.text = model.title;
-    [self.title sizeToFit];
-    return self.title.frame.size.height;
-    
-}
-
 - (void)prepareForReuse {
     [super prepareForReuse];
     self.thumbnail.image = nil;

@@ -10,27 +10,28 @@
 #import "NFNewsFeedDatasouce.h"
 #import "NFNewsFeedCell.h"
 #import "NFFeedElement.h"
+#import "NFDetailController.h"
 
 @interface NFNewsFeedController ()<NFNewsFeedDelegate>
 
 @property (nonatomic, strong) NFNewsFeedDatasouce *dataSource;
+@property (nonatomic, strong) NSMutableDictionary *heightAtIndexPath;
 
 @end
 
 static NSString *const kDefaultURLstring = @"http://tgs.themindstudios.com/api/v1/application/ios_test_task/articles";
 static NSString *const kCellIdentifier = @"NFNewsFeedCell";
+static NSString *const kDetailController = @"NFDetailController";
+
 
 @implementation NFNewsFeedController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSource = [[NFNewsFeedDatasouce alloc] initWithDelegate:self];
+    self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
+    self.tableView.rowHeight = 100;
     [self.dataSource requestWithURL:kDefaultURLstring];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    [self.tableView reloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -47,16 +48,11 @@ static NSString *const kCellIdentifier = @"NFNewsFeedCell";
 - (void)contentWasChanged {
     [self.tableView reloadData];
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NFFeedElement *element = [self.dataSource modelAtIndex:indexPath.row];
-//    NFNewsFeedCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
-    return UITableViewAutomaticDimension;
-}
 
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NFFeedElement *element = [self.dataSource modelAtIndex:indexPath.row];
-//    NFNewsFeedCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
-    return UITableViewAutomaticDimension;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NFDetailController *detail = [self.storyboard instantiateViewControllerWithIdentifier:kDetailController];
+    detail.model = [self.dataSource modelAtIndex:indexPath.row];
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 @end
