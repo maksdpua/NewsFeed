@@ -7,15 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D7386831CBA56ED00D99015 /* NFNewsFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7386821CBA56ED00D99015 /* NFNewsFeedCell.m */; };
+		2D7386871CBA5C5800D99015 /* NFNewsFeedDatasouce.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7386861CBA5C5800D99015 /* NFNewsFeedDatasouce.m */; };
+		2D73868D1CBA5D0200D99015 /* NFFeedElement+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D73868A1CBA5D0200D99015 /* NFFeedElement+CoreDataProperties.m */; };
+		2D73868E1CBA5D0200D99015 /* NFFeedElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D73868C1CBA5D0200D99015 /* NFFeedElement.m */; };
+		2D8294C61CBA6620006C92A1 /* UIImage+UIImage_Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8294C51CBA6620006C92A1 /* UIImage+UIImage_Placeholder.m */; };
+		2D8294C91CBA674B006C92A1 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D8294C81CBA674B006C92A1 /* placeholder.jpg */; };
+		2D8294CD1CBA6D0D006C92A1 /* NFRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8294CC1CBA6D0D006C92A1 /* NFRequestManager.m */; };
 		2DCCC19D1CBA4D3000FE810B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCC19C1CBA4D3000FE810B /* main.m */; };
 		2DCCC1A01CBA4D3000FE810B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCC19F1CBA4D3000FE810B /* AppDelegate.m */; };
 		2DCCC1A61CBA4D3000FE810B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCC1A41CBA4D3000FE810B /* Main.storyboard */; };
 		2DCCC1A91CBA4D3000FE810B /* NewsFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCC1A71CBA4D3000FE810B /* NewsFeed.xcdatamodeld */; };
 		2DCCC1AB1CBA4D3000FE810B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCC1AA1CBA4D3000FE810B /* Assets.xcassets */; };
 		2DCCC1AE1CBA4D3000FE810B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCC1AC1CBA4D3000FE810B /* LaunchScreen.storyboard */; };
+		2DCCC1BA1CBA526400FE810B /* NFNewsFeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCC1B91CBA526400FE810B /* NFNewsFeedController.m */; };
+		2DCCC1BF1CBA531B00FE810B /* NFMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCC1BE1CBA531B00FE810B /* NFMapper.m */; };
+		531BFC4629950882F34B143A /* libPods-NewsFeed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2C2C0495BE8DBDBF01B6C3 /* libPods-NewsFeed.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D7386811CBA56ED00D99015 /* NFNewsFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFNewsFeedCell.h; path = GUI/Cells/NFNewsFeedCell/NFNewsFeedCell.h; sourceTree = "<group>"; };
+		2D7386821CBA56ED00D99015 /* NFNewsFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NFNewsFeedCell.m; path = GUI/Cells/NFNewsFeedCell/NFNewsFeedCell.m; sourceTree = "<group>"; };
+		2D7386851CBA5C5800D99015 /* NFNewsFeedDatasouce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFNewsFeedDatasouce.h; path = GUI/NFNewsFeedDatasouce/NFNewsFeedDatasouce.h; sourceTree = "<group>"; };
+		2D7386861CBA5C5800D99015 /* NFNewsFeedDatasouce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NFNewsFeedDatasouce.m; path = GUI/NFNewsFeedDatasouce/NFNewsFeedDatasouce.m; sourceTree = "<group>"; };
+		2D7386891CBA5D0200D99015 /* NFFeedElement+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NFFeedElement+CoreDataProperties.h"; path = "CoreData/NFFeedElement+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2D73868A1CBA5D0200D99015 /* NFFeedElement+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NFFeedElement+CoreDataProperties.m"; path = "CoreData/NFFeedElement+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2D73868B1CBA5D0200D99015 /* NFFeedElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFFeedElement.h; path = CoreData/NFFeedElement.h; sourceTree = "<group>"; };
+		2D73868C1CBA5D0200D99015 /* NFFeedElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NFFeedElement.m; path = CoreData/NFFeedElement.m; sourceTree = "<group>"; };
+		2D8294C41CBA6620006C92A1 /* UIImage+UIImage_Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+UIImage_Placeholder.h"; path = "Categories/UIImage+Placeholder/UIImage+UIImage_Placeholder.h"; sourceTree = "<group>"; };
+		2D8294C51CBA6620006C92A1 /* UIImage+UIImage_Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+UIImage_Placeholder.m"; path = "Categories/UIImage+Placeholder/UIImage+UIImage_Placeholder.m"; sourceTree = "<group>"; };
+		2D8294C81CBA674B006C92A1 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = placeholder.jpg; path = Resource/placeholder.jpg; sourceTree = "<group>"; };
+		2D8294CB1CBA6D0D006C92A1 /* NFRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFRequestManager.h; path = Classes/NFRequestManager/NFRequestManager.h; sourceTree = "<group>"; };
+		2D8294CC1CBA6D0D006C92A1 /* NFRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NFRequestManager.m; path = Classes/NFRequestManager/NFRequestManager.m; sourceTree = "<group>"; };
 		2DCCC1981CBA4D3000FE810B /* NewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DCCC19C1CBA4D3000FE810B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DCCC19E1CBA4D3000FE810B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -25,6 +48,13 @@
 		2DCCC1AA1CBA4D3000FE810B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DCCC1AD1CBA4D3000FE810B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DCCC1AF1CBA4D3000FE810B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DCCC1B81CBA526400FE810B /* NFNewsFeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFNewsFeedController.h; path = GUI/ViewControllers/NFNewsFeedController.h; sourceTree = "<group>"; };
+		2DCCC1B91CBA526400FE810B /* NFNewsFeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NFNewsFeedController.m; path = GUI/ViewControllers/NFNewsFeedController.m; sourceTree = "<group>"; };
+		2DCCC1BD1CBA531B00FE810B /* NFMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFMapper.h; path = Classes/NFMapper/NFMapper.h; sourceTree = "<group>"; };
+		2DCCC1BE1CBA531B00FE810B /* NFMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NFMapper.m; path = Classes/NFMapper/NFMapper.m; sourceTree = "<group>"; };
+		3D109BA1F5A6ED46BD972E09 /* Pods-NewsFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsFeed/Pods-NewsFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		7D0060F3C2D95BA8259C6663 /* Pods-NewsFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsFeed/Pods-NewsFeed.release.xcconfig"; sourceTree = "<group>"; };
+		ED2C2C0495BE8DBDBF01B6C3 /* libPods-NewsFeed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsFeed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +62,99 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531BFC4629950882F34B143A /* libPods-NewsFeed.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		293271BF9A787D0E6EFF1A07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2C2C0495BE8DBDBF01B6C3 /* libPods-NewsFeed.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D73867F1CBA569F00D99015 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2D7386801CBA56A700D99015 /* NFNewsFeedCell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		2D7386801CBA56A700D99015 /* NFNewsFeedCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D7386811CBA56ED00D99015 /* NFNewsFeedCell.h */,
+				2D7386821CBA56ED00D99015 /* NFNewsFeedCell.m */,
+			);
+			name = NFNewsFeedCell;
+			sourceTree = "<group>";
+		};
+		2D7386841CBA5C1800D99015 /* NFNeewsFeedDatasouce */ = {
+			isa = PBXGroup;
+			children = (
+				2D7386851CBA5C5800D99015 /* NFNewsFeedDatasouce.h */,
+				2D7386861CBA5C5800D99015 /* NFNewsFeedDatasouce.m */,
+			);
+			name = NFNeewsFeedDatasouce;
+			sourceTree = "<group>";
+		};
+		2D7386881CBA5CF400D99015 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2D7386891CBA5D0200D99015 /* NFFeedElement+CoreDataProperties.h */,
+				2D73868A1CBA5D0200D99015 /* NFFeedElement+CoreDataProperties.m */,
+				2D73868B1CBA5D0200D99015 /* NFFeedElement.h */,
+				2D73868C1CBA5D0200D99015 /* NFFeedElement.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		2D8294C21CBA65EB006C92A1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2D8294C31CBA65F5006C92A1 /* UIImage+Placeholder */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		2D8294C31CBA65F5006C92A1 /* UIImage+Placeholder */ = {
+			isa = PBXGroup;
+			children = (
+				2D8294C41CBA6620006C92A1 /* UIImage+UIImage_Placeholder.h */,
+				2D8294C51CBA6620006C92A1 /* UIImage+UIImage_Placeholder.m */,
+			);
+			name = "UIImage+Placeholder";
+			sourceTree = "<group>";
+		};
+		2D8294C71CBA6735006C92A1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2D8294C81CBA674B006C92A1 /* placeholder.jpg */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		2D8294CA1CBA6CEE006C92A1 /* NFRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				2D8294CB1CBA6D0D006C92A1 /* NFRequestManager.h */,
+				2D8294CC1CBA6D0D006C92A1 /* NFRequestManager.m */,
+			);
+			name = NFRequestManager;
+			sourceTree = "<group>";
+		};
 		2DCCC18F1CBA4D3000FE810B = {
 			isa = PBXGroup;
 			children = (
 				2DCCC19A1CBA4D3000FE810B /* NewsFeed */,
 				2DCCC1991CBA4D3000FE810B /* Products */,
+				318D4E258ABB023D079D2BF8 /* Pods */,
+				293271BF9A787D0E6EFF1A07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +169,10 @@
 		2DCCC19A1CBA4D3000FE810B /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				2D8294C71CBA6735006C92A1 /* Resource */,
+				2D8294C21CBA65EB006C92A1 /* Categories */,
+				2D7386881CBA5CF400D99015 /* CoreData */,
+				2DCCC1BB1CBA52CA00FE810B /* Classes */,
 				2DCCC1B51CBA4D5700FE810B /* GUI */,
 				2DCCC19E1CBA4D3000FE810B /* AppDelegate.h */,
 				2DCCC19F1CBA4D3000FE810B /* AppDelegate.m */,
@@ -81,6 +197,8 @@
 		2DCCC1B51CBA4D5700FE810B /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				2D7386841CBA5C1800D99015 /* NFNeewsFeedDatasouce */,
+				2D73867F1CBA569F00D99015 /* Cells */,
 				2DCCC1B61CBA4D6300FE810B /* ViewControllers */,
 			);
 			name = GUI;
@@ -89,8 +207,45 @@
 		2DCCC1B61CBA4D6300FE810B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2DCCC1B71CBA522500FE810B /* NFNewsFeedController */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2DCCC1B71CBA522500FE810B /* NFNewsFeedController */ = {
+			isa = PBXGroup;
+			children = (
+				2DCCC1B81CBA526400FE810B /* NFNewsFeedController.h */,
+				2DCCC1B91CBA526400FE810B /* NFNewsFeedController.m */,
+			);
+			name = NFNewsFeedController;
+			sourceTree = "<group>";
+		};
+		2DCCC1BB1CBA52CA00FE810B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2D8294CA1CBA6CEE006C92A1 /* NFRequestManager */,
+				2DCCC1BC1CBA52F600FE810B /* NFMapper */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2DCCC1BC1CBA52F600FE810B /* NFMapper */ = {
+			isa = PBXGroup;
+			children = (
+				2DCCC1BD1CBA531B00FE810B /* NFMapper.h */,
+				2DCCC1BE1CBA531B00FE810B /* NFMapper.m */,
+			);
+			name = NFMapper;
+			sourceTree = "<group>";
+		};
+		318D4E258ABB023D079D2BF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D109BA1F5A6ED46BD972E09 /* Pods-NewsFeed.debug.xcconfig */,
+				7D0060F3C2D95BA8259C6663 /* Pods-NewsFeed.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DCCC1B21CBA4D3000FE810B /* Build configuration list for PBXNativeTarget "NewsFeed" */;
 			buildPhases = (
+				EBC1D7AD5B26ABC00E9D9A14 /* Check Pods Manifest.lock */,
 				2DCCC1941CBA4D3000FE810B /* Sources */,
 				2DCCC1951CBA4D3000FE810B /* Frameworks */,
 				2DCCC1961CBA4D3000FE810B /* Resources */,
+				D202C79DC9BDB80DA592B8C6 /* Embed Pods Frameworks */,
+				BF91807FB5E6DEF031EF525C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DCCC1AE1CBA4D3000FE810B /* LaunchScreen.storyboard in Resources */,
+				2D8294C91CBA674B006C92A1 /* placeholder.jpg in Resources */,
 				2DCCC1AB1CBA4D3000FE810B /* Assets.xcassets in Resources */,
 				2DCCC1A61CBA4D3000FE810B /* Main.storyboard in Resources */,
 			);
@@ -159,13 +318,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BF91807FB5E6DEF031EF525C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsFeed/Pods-NewsFeed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D202C79DC9BDB80DA592B8C6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsFeed/Pods-NewsFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBC1D7AD5B26ABC00E9D9A14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2DCCC1941CBA4D3000FE810B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D73868E1CBA5D0200D99015 /* NFFeedElement.m in Sources */,
 				2DCCC1A01CBA4D3000FE810B /* AppDelegate.m in Sources */,
 				2DCCC1A91CBA4D3000FE810B /* NewsFeed.xcdatamodeld in Sources */,
+				2D8294C61CBA6620006C92A1 /* UIImage+UIImage_Placeholder.m in Sources */,
+				2D73868D1CBA5D0200D99015 /* NFFeedElement+CoreDataProperties.m in Sources */,
+				2D7386831CBA56ED00D99015 /* NFNewsFeedCell.m in Sources */,
+				2D7386871CBA5C5800D99015 /* NFNewsFeedDatasouce.m in Sources */,
+				2D8294CD1CBA6D0D006C92A1 /* NFRequestManager.m in Sources */,
+				2DCCC1BA1CBA526400FE810B /* NFNewsFeedController.m in Sources */,
+				2DCCC1BF1CBA531B00FE810B /* NFMapper.m in Sources */,
 				2DCCC19D1CBA4D3000FE810B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +493,7 @@
 		};
 		2DCCC1B31CBA4D3000FE810B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D109BA1F5A6ED46BD972E09 /* Pods-NewsFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -290,6 +506,7 @@
 		};
 		2DCCC1B41CBA4D3000FE810B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0060F3C2D95BA8259C6663 /* Pods-NewsFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -319,6 +536,7 @@
 				2DCCC1B41CBA4D3000FE810B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
