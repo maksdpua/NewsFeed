@@ -21,12 +21,10 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.layer.borderWidth = 10;
+    self.layer.borderColor = [UIColor whiteColor].CGColor;
 }
 
-- (void)setupWithModel:(NFFeedElement *)model {
-    self.title.text = model.title;
-    [self.thumbnail setImageWithURL:[NSURL URLWithString:model.imageMedium] placeholderImage:[UIImage placeholder]];
-}
 
 - (void)prepareForReuse {
     [super prepareForReuse];
@@ -36,6 +34,13 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
+}
+
+#pragma mark - Custom methods
+
+- (void)setupWithModel:(NFFeedElement *)model {
+    self.title.text = model.title;
+    [self.thumbnail setImageWithURL:[NSURL URLWithString:model.imageMedium] placeholderImage:[UIImage placeholder]];
 }
 
 @end

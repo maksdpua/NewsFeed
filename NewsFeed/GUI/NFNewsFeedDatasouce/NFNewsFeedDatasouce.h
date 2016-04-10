@@ -18,8 +18,7 @@
 - (instancetype)initWithDelegate:(id<NFNewsFeedDelegate>)delegate;
 - (NFFeedElement *)modelAtIndex:(NSUInteger)index;
 - (NSInteger)modelsCount;
-- (void)deleteElements;
-- (void)saveElements;
+
 - (void)requestWithURL:(NSString *)urlString;
 
 @end

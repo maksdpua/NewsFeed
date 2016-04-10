@@ -26,6 +26,8 @@ static NSString *const kDetailController = @"NFDetailController";
 
 @implementation NFNewsFeedController
 
+#pragma mark - Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSource = [[NFNewsFeedDatasouce alloc] initWithDelegate:self];
@@ -33,6 +35,8 @@ static NSString *const kDetailController = @"NFDetailController";
     self.tableView.rowHeight = 100;
     [self.dataSource requestWithURL:kDefaultURLstring];
 }
+
+#pragma mark - UITableViewDelegate methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.dataSource modelsCount];
@@ -45,14 +49,16 @@ static NSString *const kDetailController = @"NFDetailController";
     
 }
 
-- (void)contentWasChanged {
-    [self.tableView reloadData];
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NFDetailController *detail = [self.storyboard instantiateViewControllerWithIdentifier:kDetailController];
     detail.model = [self.dataSource modelAtIndex:indexPath.row];
     [self.navigationController pushViewController:detail animated:YES];
+}
+
+#pragma NFNewsFeedDataSource methods
+
+- (void)contentWasChanged {
+    [self.tableView reloadData];
 }
 
 @end
