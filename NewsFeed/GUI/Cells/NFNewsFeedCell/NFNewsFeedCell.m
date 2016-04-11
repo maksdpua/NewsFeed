@@ -7,8 +7,8 @@
 //
 
 #import "NFNewsFeedCell.h"
-#import <AFNetworking/UIImageView+AFNetworking.h>
-#import "UIImage+UIImage_Placeholder.h"
+#import "UIImageView+Loader.h"
+#import "MSCache.h"
 
 @interface NFNewsFeedCell()
 
@@ -40,7 +40,11 @@
 
 - (void)setupWithModel:(NFFeedElement *)model {
     self.title.text = model.title;
-    [self.thumbnail setImageWithURL:[NSURL URLWithString:model.imageMedium] placeholderImage:[UIImage placeholder]];
+    if ([MSCache objectForKey:model.imageMedium]) {
+        self.thumbnail.image = [UIImage imageWithData:[MSCache objectForKey:model.imageMedium]];
+    } else {
+        [self.thumbnail setImageWithURLString:model.imageMedium];
+    }
 }
 
 @end

@@ -15,6 +15,8 @@
 		2D8294C61CBA6620006C92A1 /* UIImage+UIImage_Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8294C51CBA6620006C92A1 /* UIImage+UIImage_Placeholder.m */; };
 		2D8294C91CBA674B006C92A1 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D8294C81CBA674B006C92A1 /* placeholder.jpg */; };
 		2D8294CD1CBA6D0D006C92A1 /* NFRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8294CC1CBA6D0D006C92A1 /* NFRequestManager.m */; };
+		2D9890F91CBBA6D500A25B1A /* MSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9890F81CBBA6D500A25B1A /* MSCache.m */; };
+		2D9891031CBBA9A500A25B1A /* UIImageView+Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9891021CBBA9A500A25B1A /* UIImageView+Loader.m */; };
 		2DCCC19D1CBA4D3000FE810B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCC19C1CBA4D3000FE810B /* main.m */; };
 		2DCCC1A01CBA4D3000FE810B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCC19F1CBA4D3000FE810B /* AppDelegate.m */; };
 		2DCCC1A61CBA4D3000FE810B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCC1A41CBA4D3000FE810B /* Main.storyboard */; };
@@ -42,6 +44,10 @@
 		2D8294C81CBA674B006C92A1 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = placeholder.jpg; path = Resource/placeholder.jpg; sourceTree = "<group>"; };
 		2D8294CB1CBA6D0D006C92A1 /* NFRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFRequestManager.h; path = Classes/NFRequestManager/NFRequestManager.h; sourceTree = "<group>"; };
 		2D8294CC1CBA6D0D006C92A1 /* NFRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NFRequestManager.m; path = Classes/NFRequestManager/NFRequestManager.m; sourceTree = "<group>"; };
+		2D9890F71CBBA6D500A25B1A /* MSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCache.h; sourceTree = "<group>"; };
+		2D9890F81CBBA6D500A25B1A /* MSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCache.m; sourceTree = "<group>"; };
+		2D9891011CBBA9A500A25B1A /* UIImageView+Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Loader.h"; path = "Categories/UIImageView+Loader/UIImageView+Loader.h"; sourceTree = "<group>"; };
+		2D9891021CBBA9A500A25B1A /* UIImageView+Loader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Loader.m"; path = "Categories/UIImageView+Loader/UIImageView+Loader.m"; sourceTree = "<group>"; };
 		2DCCC1981CBA4D3000FE810B /* NewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DCCC19C1CBA4D3000FE810B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DCCC19E1CBA4D3000FE810B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 		2D8294C21CBA65EB006C92A1 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				2D9890FA1CBBA8DF00A25B1A /* UIImageView+Loader */,
 				2D8294C31CBA65F5006C92A1 /* UIImage+Placeholder */,
 			);
 			name = Categories;
@@ -158,6 +165,25 @@
 				2D8294CC1CBA6D0D006C92A1 /* NFRequestManager.m */,
 			);
 			name = NFRequestManager;
+			sourceTree = "<group>";
+		};
+		2D9890F61CBBA6D500A25B1A /* MSCashe */ = {
+			isa = PBXGroup;
+			children = (
+				2D9890F71CBBA6D500A25B1A /* MSCache.h */,
+				2D9890F81CBBA6D500A25B1A /* MSCache.m */,
+			);
+			name = MSCashe;
+			path = Classes/MSCashe;
+			sourceTree = "<group>";
+		};
+		2D9890FA1CBBA8DF00A25B1A /* UIImageView+Loader */ = {
+			isa = PBXGroup;
+			children = (
+				2D9891011CBBA9A500A25B1A /* UIImageView+Loader.h */,
+				2D9891021CBBA9A500A25B1A /* UIImageView+Loader.m */,
+			);
+			name = "UIImageView+Loader";
 			sourceTree = "<group>";
 		};
 		2DCCC18F1CBA4D3000FE810B = {
@@ -237,6 +263,7 @@
 		2DCCC1BB1CBA52CA00FE810B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2D9890F61CBBA6D500A25B1A /* MSCashe */,
 				2D8294CA1CBA6CEE006C92A1 /* NFRequestManager */,
 				2DCCC1BC1CBA52F600FE810B /* NFMapper */,
 			);
@@ -385,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D73868E1CBA5D0200D99015 /* NFFeedElement.m in Sources */,
+				2D9890F91CBBA6D500A25B1A /* MSCache.m in Sources */,
 				2DCCC1A01CBA4D3000FE810B /* AppDelegate.m in Sources */,
 				2DCCC1A91CBA4D3000FE810B /* NewsFeed.xcdatamodeld in Sources */,
 				2D8294C61CBA6620006C92A1 /* UIImage+UIImage_Placeholder.m in Sources */,
@@ -392,6 +420,7 @@
 				2D7386831CBA56ED00D99015 /* NFNewsFeedCell.m in Sources */,
 				2D7386871CBA5C5800D99015 /* NFNewsFeedDatasouce.m in Sources */,
 				2D8294CD1CBA6D0D006C92A1 /* NFRequestManager.m in Sources */,
+				2D9891031CBBA9A500A25B1A /* UIImageView+Loader.m in Sources */,
 				2DCCC1BA1CBA526400FE810B /* NFNewsFeedController.m in Sources */,
 				2DCCC1BF1CBA531B00FE810B /* NFMapper.m in Sources */,
 				2D6423201CBAEBD600B3194A /* NFDetailController.m in Sources */,
@@ -512,6 +541,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MS.NewsFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,6 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MS.NewsFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";

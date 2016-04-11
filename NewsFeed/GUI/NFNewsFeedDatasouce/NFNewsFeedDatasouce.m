@@ -48,15 +48,11 @@
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 }
 
-- (void)deleteElements {
-    [NFFeedElement MR_truncateAll];
-}
-
 #pragma mark - NFRequestManager methods
 
 - (void)requestWithURL:(NSString *)urlString {
     [self.requestManager requestWithURL:urlString responseWithBlock:^(NSURLSessionDataTask *task, id responseObject) {
-        [self deleteElements];
+        [NFFeedElement MR_truncateAll];
         [NFMapper mapWithObject:responseObject];
     } errorWithBlock:^(NSURLSessionDataTask *task, NSError *error) {
         
@@ -67,7 +63,7 @@
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     [self setupFetchResultController];
-    if ([self respondsToSelector:@selector(contentWasChanged)]) {
+    if ([self.delegate respondsToSelector:@selector(contentWasChanged)]) {
         [self.delegate contentWasChanged];
     }
 }

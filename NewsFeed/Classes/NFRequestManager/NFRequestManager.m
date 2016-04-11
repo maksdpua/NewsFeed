@@ -43,11 +43,9 @@ typedef void (^failBlock)(NSURLSessionDataTask *task, NSError *error);
     self.manager.requestSerializer = [AFJSONRequestSerializer serializer];
     
     [self.manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"Succsess %@", responseObject);
         responseBlock(task, responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         errorBlock(task, error);
-        NSLog(@"error %@", error);
     }];
 }
 

@@ -7,8 +7,9 @@
 //
 
 #import "NFDetailController.h"
+#import "MSCache.h"
 
-@interface NFDetailController()<UIWebViewDelegate, UIScrollViewDelegate>
+@interface NFDetailController()
 
 @property (nonatomic, strong) IBOutlet UIWebView *webView;
 
@@ -20,26 +21,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.webView.scrollView.delegate = self;
-    [self.webView.scrollView setShowsHorizontalScrollIndicator:NO];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.model.contentURL]]];
+    
+    NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.model.contentURL] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:15.0];
+    [self.webView loadRequest:theRequest];
+    
+    
+    UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithTitle:@"Share" style:UIBarButtonItemStyleDone target:self action:@selector(shareAction)];
+    
+    self.navigationItem.rightBarButtonItem = shareButton;
 }
 
-#pragma mark - UIWebViewDelegate methods
-
-- (void)webViewDidFinishLoad:(UIWebView *)aWebView {
-    CGRect frame = aWebView.frame;
-    frame.size.height = 1;
-    aWebView.frame = frame;
-    CGSize fittingSize = [aWebView sizeThatFits:CGSizeZero];
-    frame.size = fittingSize;
-    aWebView.frame = frame;
+- (void)shareAction {
+    NSString *textToShare = self.model.title;
+    NSURL *myWebsite = [NSURL URLWithString:self.model.contentURL];
+    UIImage *image = [UIImage imageWithData:[MSCache objectForKey:self.model.imageMedium]];
+    NSArray *objectsToShare = @[textToShare, image, myWebsite];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
-#pragma mark - UIScrollViewDelegate methods
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.x > 0)
-        scrollView.contentOffset = CGPointMake(0, scrollView.contentOffset.y);
-}
 @end
